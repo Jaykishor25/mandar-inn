@@ -17,10 +17,8 @@ app.use(express.json());
 
 // 2. SECURE CORS CONFIGURATION
 // Localhost aur Live Production Domain dono ko automatic handle karega
-app.use(cors({
-  origin: [process.env.CLIENT_URL, "http://localhost:5173", "https://mandar-inn.vercel.app"],
-  credentials: true
-}));
+app.use(cors());
+
 
 // 3. APPLICATION API ROUTES
 app.use('/api/auth', authRoutes);
