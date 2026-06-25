@@ -20,7 +20,7 @@ export default function Login() {
     // DYNAMIC BACKEND URL: Local par localhost chalega, production me live URL
     const BACKEND_BASE_URL = window.location.hostname === 'localhost' 
       ? 'http://localhost:5000' 
-      : 'https://aapka-backend-live-url.onrender.com'; // Deploy ke baad yahan apna live URL daalna hoga
+      : 'https://mandar-inn.onrender.com'; // Deploy ke baad yahan apna live URL daalna hoga
 
     const endpoint = isSignup 
       ? `${BACKEND_BASE_URL}/api/auth/register` 
